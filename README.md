@@ -5,3 +5,6 @@ http://book.algospot.com/index.html
 
 I just added main() function for handling input and some necessary code to be run over Visual Studio.
 Plz, visit https://algospot.com for testing.
+
+## My blog for algorithm/problem solving
+http://gooddaytocode.blogspot.kr
