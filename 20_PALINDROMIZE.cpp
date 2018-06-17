@@ -7,7 +7,7 @@ using namespace std;
 // 코드 20.3 단순한 문자열 알고리즘을 이용해 부분 일치 테이블 계산하기
 // pi[]를 계산한다
 // pi[i] = N[..i]의 접미사도 되고 접두사도 되는 문자열의 최대 길이
-vector<int> getPartialMatchNative(const string& N) {
+vector<int> getPartialMatchNaive(const string& N) {
 	int m = N.size();
 	vector<int> pi(m, 0);
 	// 단순한 문자열 검색 알고리즘을 구현한다
