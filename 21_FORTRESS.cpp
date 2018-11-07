@@ -22,7 +22,8 @@ bool encloses(int a, int b) {
 // '성벽'트리에서 parent가 child의 부모인지 확인한다  
 // parent는 child를 꼭 직접 포함해야 한다  
 bool isChild(int parent, int child) {
-    if (!encloses(parent, child)) return false;
+    if (!encloses(parent, child))
+        return false;
     for (int i = 0; i < n; ++i)
         if (i != parent && i != child &&
             encloses(parent, i) && encloses(i, child))
@@ -43,7 +44,8 @@ int height(TreeNode* root) {
     for (int i = 0; i < root->children.size(); ++i)
         heights.push_back(height(root->children[i]));
     // 만약 자식이 하나도 없다면 0 을 반환한다  
-    if (heights.empty()) return 0;
+    if (heights.empty())
+        return 0;
     sort(heights.begin(), heights.end());
     // root를 최상위 노드로 하는 경로를 고려하자  
     if (heights.size() >= 2)
