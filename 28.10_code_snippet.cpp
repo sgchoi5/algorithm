@@ -15,6 +15,7 @@ int sccCounter, vertexCounter;
 // (이미 SCC로 묶인 정점으로 연결된 교차 간선은 무시한다)
 int scc(int here) {
 	int ret = discovered[here] = vertexCounter++;
+	// 스택에 here를 넣는다. here의 후손들은 모두 스택에서 here 후에 들어간다
 	st.push(here);
 	for (int i = 0; i < adj[here].size(); ++i) {
 		int there = adj[here][i];
