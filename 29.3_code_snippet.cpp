@@ -22,7 +22,7 @@ int bfs(const vector<int>& perm) {
 		int cost = distance[here];
 		// 가능한 모든 구간을 뒤집어 본다
 		for (int i = 0; i < n; ++i) {
-			for (int j = i + 1; j <= n; ++j) {
+			for (int j = i + 2; j <= n; ++j) {
 				reverse(here.begin() + i, here.begin() + j);
 				if (distance.count(here) == 0) {
 					distance[here] = cost + 1;
