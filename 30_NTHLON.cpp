@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <queue>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 const int INF = 987654321;
